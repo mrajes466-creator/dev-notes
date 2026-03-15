@@ -1,4 +1,9 @@
 cat > app.js << 'EOF'
+
+function toggleDark() {
+  document.body.classList.toggle('dark');
+}
+EOF
 // Dev Notes - app.js
 // version: 1.0
 
