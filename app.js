@@ -5,7 +5,7 @@ function toggleDark() {
 }
 EOF
 // Dev Notes - app.js
-// version: 1.0// version: 2.0 - dark mode added|' app.js
+// version: 2.0 - dark mode added// version: 2.0 - dark mode added|' app.js
 
 function addNote() {
   const input = document.getElementById('noteInput');
