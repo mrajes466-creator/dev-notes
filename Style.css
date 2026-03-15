@@ -1,86 +1,10 @@
-cat > style.css << 'EOF'
-* { box-sizing: border-box; margin: 0; padding: 0; }
+cat >> style.css << 'EOF'
 
-body {
-  font-family: segoe ui, sans-serif;
-  background: #f0f4f8;
-  display: flex;
-  justify-content: center;
-  padding: 40px 16px;
-  min-height: 100vh;
-}
-
-.container {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 32px;
-  width: 100%;
-  max-width: 520px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-}
-
-h1 {
-  font-size: 26px;
-  color: #1a202c;
-  margin-bottom: 4px;
-}
-
-.subtitle {
-  font-size: 14px;
-  color: #718096;
-  margin-bottom: 24px;
-}
-
-.input-row {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 20px;
-}
-
-input {
-  flex: 1;
-  padding: 10px 14px;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  font-size: 14px;
-  outline: none;
-}
-
-input:focus { border-color: #4a90e2; }
-
-button {
-  padding: 10px 20px;
-  background: #4a90e2;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-button:hover { background: #357abd; }
-
-ul { list-style: none; }
-
-li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 14px;
-  border-radius: 8px;
-  background: #f7fafc;
-  border: 1px solid #e2e8f0;
-  margin-bottom: 8px;
-  font-size: 14px;
-  color: #2d3748;
-}
-
-li .delete {
-  background: none;
-  border: none;
-  color: #e53e3e;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 0 4px;
-}
+/* dark mode */
+body.dark { background: #1a202c; }
+body.dark .container { background: #2d3748; box-shadow: none; }
+body.dark h1 { color: #f7fafc; }
+body.dark .subtitle { color: #a0aec0; }
+body.dark input { background: #4a5568; border-color: #4a5568; color: #f7fafc; }
+body.dark li { background: #4a5568; border-color: #4a5568; color: #f7fafc; }
 EOF

@@ -9,7 +9,7 @@ cat > index.html << 'EOF'
 </head>
 <body>
   <div class="container">
-    <h1>Dev Notes</h1>
+    sed -i 's|<h1>Dev Notes</h1>|<h1>Dev Notes <button onclick="toggleDark()" style="float:right;font-size:13px;padding:6px 12px;border-radius:6px;border:1px solid #e2e8f0;background:#f7fafc;cursor:pointer;">Dark Mode</button></h1>|' index.html
     <p class="subtitle">Your personal developer notepad</p>
     <div class="input-row">
       <input type="text" id="noteInput" placeholder="Type a note and press Add..." />
